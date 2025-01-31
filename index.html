@@ -33,25 +33,63 @@
         a:hover {
             opacity: 0.8;
         }
+
+        .hero-img {
+            animation-name: appear;
+            animation-duration: 4s;
+        }
+
+        @keyframes appear {
+            0%   {top:2500px;}
+            100%  {top:0px;}
+        }
     </style>
 </head>
 
 <body class="sora text-[#111111] text-xl">
-    <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
-        <nav class="py-5 text-center">
-            <p>Menu</p>
+    <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]  overflow-hidden">
+        <nav class="min-[320px]:block max-[1050px]:block min-[1051px]:hidden">
+            <div class="mobile-nav w-5/6 mx-auto flex py-3 text-center justify-between items-center">
+                <img src="c2-assets/mobile-logo.png" alt="">
+                <a href=""><i class="fa-solid fa-bars"></i></a>
+            </div>
         </nav>
+
+        <nav class="max-[1051px]:hidden">
+            <div class="big-nav w-5/6 mx-auto flex py-5 text-center justify-between items-center">
+                <div class="nav-logo">
+                    <img src="c2-assets/logo-header.png" alt="">
+                </div>
+    
+                <div class="nav-pages">
+                    <ul class="flex gap-4">
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+    
+                <div class="nav-buttons flex gap-4 items-center">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <button class="px-5 py-1 rounded-lg border-2 border-[#179800]">Login</button>
+                    <button class="bg-[#179800] border-2 border-[#179800] px-5 py-1 rounded-lg text-white">Register</button>
+                </div>
+            </div>
+        </nav>
+
+
         <!-- Hero Banner Section Start -->
         <section class="hero-section mt-20">
             <div class="hero-container">
-                <div class="hero-content flex-col text-center mx-auto p-0">
+                <div class="hero-content flex flex-col text-center mx-auto p-0">
                     <div class="hero-text xl:w-3/4">
                         <h1 class="xl:text-6xl sm:text-3xl font-semibold">Freshness <span class="text-[#179800]">You
                                 Can<br>Count</span> On, Prices You’ll Love!</h1>
                         <p class="py-8">Shop your daily essentials at unbeatable prices. From fresh produce to pantry
                             staples, we’ve got you covered every day!</p>
                     </div>
-                    <div class="hero-img">
+                    <div class="hero-img relative">
                         <img src="c2-assets/hero-vegetables.png" alt="">
                     </div>
                 </div>
@@ -71,8 +109,7 @@
                             <img src="c2-assets/service.png" alt="" class="mx-auto">
                         </div>
                         <h3 class="text-2xl mt-6 mb-3 font-semibold">24/7 Services</h3>
-                        <p class="text-xl font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt</p>
+                        <p class="text-xl font-light">Our 24/7 services ensure that you can access support, place orders, or get assistance anytime, day or night, making convenience a top priority for our customers.</p>
                     </div>
 
                     <div class="services-card p-8 bg-[#EFEBE3] rounded-[16px]">
@@ -80,8 +117,7 @@
                             <img src="c2-assets/delivery.png" alt="" class="mx-auto">
                         </div>
                         <h3 class="text-2xl mt-6 mb-3 font-semibold">Fast Delivery</h3>
-                        <p class="text-xl font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt</p>
+                        <p class="text-xl font-light">With our fast delivery options, your orders are processed and shipped promptly, ensuring you receive your products in record time without compromising on quality.</p>
                     </div>
 
                     <div class="services-card p-8 bg-[#EFEBE3] rounded-[16px]">
@@ -89,8 +125,7 @@
                             <img src="c2-assets/healthy.png" alt="" class="mx-auto">
                         </div>
                         <h3 class="text-2xl mt-6 mb-3 font-semibold">Healthy Products</h3>
-                        <p class="text-xl font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt</p>
+                        <p class="text-xl font-light">We are committed to offering a wide range of healthy products, carefully curated to support your wellness journey and meet your nutritional needs.</p>
                     </div>
                 </div>
             </div>
@@ -107,7 +142,7 @@
                         <div
                             class="popular-products-card-big-inner size-full p-8 bg-[url('c2-assets/vegetable-offer.png')] bg-no-repeat bg-right-bottom">
                             <h3 class="font-semibold text-white text-4xl text-left mt-14">30% Off</h3>
-                            <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, impedit.</p>
+                            <p class="mt-4">Enjoy incredible savings with our limited-time offer of 30% off</p>
                             <button class="rounded bg-white text-black px-8 py-3 mt-4">Buy Now</button>
                         </div>
                     </div>
@@ -272,30 +307,27 @@
                 <h2 class="text-4xl font-semibold text-[#179800]">Meal Kits and Recipes</h2>
                 <div class="recipes-content flex gap-6 text-center mx-auto mt-12 p-0">
                     <div class="recipes-card p-8 bg-[#FFFFFF] rounded-[16px] shadow-xl">
-                        <div class="recipes-card-img size-36 content-center mx-auto bg-[#ffffff] rounded-[50%]">
-                            <img src="c2-assets/service.png" alt="" class="mx-auto">
+                        <div class="recipes-card-img size-36 content-center mx-auto bg-[#EFEBE3] rounded-[50%]">
+                            <img src="c2-assets/meal.png" alt="" class="mx-auto w-3/5">
                         </div>
-                        <h3 class="text-2xl mt-6 mb-3 font-semibold">24/7 Services</h3>
-                        <p class="text-xl font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt</p>
+                        <h3 class="text-2xl mt-6 mb-3 font-semibold">Meal Kits</h3>
+                        <p class="text-xl font-light">Our meal kits provide everything you need to create delicious, home-cooked meals with ease, including pre-portioned ingredients and step-by-step instructions.</p>
                     </div>
 
                     <div class="recipes-card p-8 bg-[#FFFFFF] rounded-[16px] shadow-xl">
-                        <div class="recipes-card-img size-36 content-center mx-auto bg-[#ffffff] rounded-[50%]">
-                            <img src="c2-assets/delivery.png" alt="" class="mx-auto">
+                        <div class="recipes-card-img size-36 content-center mx-auto bg-[#EFEBE3] rounded-[50%]">
+                            <img src="c2-assets/recipe.png" alt="" class="mx-auto w-3/5">
                         </div>
-                        <h3 class="text-2xl mt-6 mb-3 font-semibold">Fast Delivery</h3>
-                        <p class="text-xl font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt</p>
+                        <h3 class="text-2xl mt-6 mb-3 font-semibold">Recipe Ideas</h3>
+                        <p class="text-xl font-light">Explore our collection of recipe ideas to inspire your next meal, featuring a variety of cuisines, dietary preferences, and creative twists on classic dishes.</p>
                     </div>
 
                     <div class="recipes-card p-8 bg-[#FFFFFF] rounded-[16px] shadow-xl">
-                        <div class="recipes-card-img size-36 content-center mx-auto bg-[#ffffff] rounded-[50%]">
-                            <img src="c2-assets/healthy.png" alt="" class="mx-auto">
+                        <div class="recipes-card-img size-36 content-center mx-auto bg-[#EFEBE3] rounded-[50%]">
+                            <img src="c2-assets/cooking.png" alt="" class="mx-auto w-3/5">
                         </div>
-                        <h3 class="text-2xl mt-6 mb-3 font-semibold">Healthy Products</h3>
-                        <p class="text-xl font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt</p>
+                        <h3 class="text-2xl mt-6 mb-3 font-semibold">Cooking Tips</h3>
+                        <p class="text-xl font-light">Discover handy cooking tips to elevate your skills in the kitchen, from mastering basic techniques to learning how to enhance flavors and save time while preparing meals.</p>
                     </div>
                 </div>
             </div>
@@ -345,7 +377,7 @@
 
                     <div class="newsletter-right content-evenly">
                         <h3 class="text-4xl mt-6 mb-3 font-semibold">Get Grocery News!</h3>
-                        <p class="text-xl font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, error?</p>
+                        <p class="text-xl font-normal">Exclusive training tips, ticks, product deals and more.</p>
                         <input id="email-address" name="email-address" placeholder="Enter Your Email" type="email" class="block my-5 p-5 w-8/12 rounded-lg">
                         <button class="bg-[#179800] px-5 py-2 rounded-lg text-white">Subscribe</button>
                     </div>
@@ -362,11 +394,11 @@
                 <div class="footer-content flex items-end gap-16 justify-between">
                     <div class="footer-content-0 w-1/4">
                         <img src="c2-assets/logo-footer.png" alt="" class="cursor-pointer mb-3">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum cumque, accusantium ducimus odio incidunt voluptates?</p>
+                        <p>Exclusive training tips, ticks, product deals and more.</p>
                     </div>
     
                     <div class="footer-content-2 w-1/4">
-                        <ul class="flex flex-col gap-8">
+                        <ul class="flex flex-col gap-4">
                             <li><a href="#">Products</a></li>
                             <li><a href="#">Services</a></li>
                             <li><a href="#">Contact Us</a></li>
@@ -389,3 +421,5 @@
 </body>
 
 </html>
+
+class="py-5 text-center"
