@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Font Start -->
+    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
         rel="stylesheet">
-    <!-- Font End -->
+    <!-- Tailwind & DaisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/162b495d94.js" crossorigin="anonymous"></script>
     <style>
         .sora {
             font-family: "Sora";
@@ -23,6 +24,14 @@
 
         .poppin {
             font-family: "Poppins";
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+        
+        a:hover {
+            opacity: 0.8;
         }
     </style>
 </head>
@@ -256,10 +265,126 @@
             </div>
         </section>
         <!-- Arrival & Offers Section End -->
+
+        <!-- Meal Kits and Recipes Section Start -->
+        <section class="recipes-section lg:py-36 sm:py-12 bg-[#EFEBE3]">
+            <div class="recipes-container w-5/6 mx-auto">
+                <h2 class="text-4xl font-semibold text-[#179800]">Meal Kits and Recipes</h2>
+                <div class="recipes-content flex gap-6 text-center mx-auto mt-12 p-0">
+                    <div class="recipes-card p-8 bg-[#FFFFFF] rounded-[16px] shadow-xl">
+                        <div class="recipes-card-img size-36 content-center mx-auto bg-[#ffffff] rounded-[50%]">
+                            <img src="c2-assets/service.png" alt="" class="mx-auto">
+                        </div>
+                        <h3 class="text-2xl mt-6 mb-3 font-semibold">24/7 Services</h3>
+                        <p class="text-xl font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt</p>
+                    </div>
+
+                    <div class="recipes-card p-8 bg-[#FFFFFF] rounded-[16px] shadow-xl">
+                        <div class="recipes-card-img size-36 content-center mx-auto bg-[#ffffff] rounded-[50%]">
+                            <img src="c2-assets/delivery.png" alt="" class="mx-auto">
+                        </div>
+                        <h3 class="text-2xl mt-6 mb-3 font-semibold">Fast Delivery</h3>
+                        <p class="text-xl font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt</p>
+                    </div>
+
+                    <div class="recipes-card p-8 bg-[#FFFFFF] rounded-[16px] shadow-xl">
+                        <div class="recipes-card-img size-36 content-center mx-auto bg-[#ffffff] rounded-[50%]">
+                            <img src="c2-assets/healthy.png" alt="" class="mx-auto">
+                        </div>
+                        <h3 class="text-2xl mt-6 mb-3 font-semibold">Healthy Products</h3>
+                        <p class="text-xl font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Meal Kits and Recipes Section End -->
+
+        <!-- Arrival & Offers Section Start -->
+        <section class="arrival-offers-section lg:pt-36 sm:pt-12">
+            <div class="arrival-offers-container w-5/6 mx-auto">
+                <h2 class="text-4xl font-semibold text-[#179800]">Arrival & Offers</h2>
+                <div class="arrival-offers-content mx-auto mt-5 p-0 flex gap-5">
+                    <div class="arrival-offers-card-left rounded-[10px] flex gap-8 bg-[#0398CA] w-2/5 items-center justify-around p-8">
+                        <div class="arrival-offers-card-text">
+                            <img src="c2-assets/teer-logo.png" alt="" class="max-w-[140px]">
+                            <button class="rounded bg-[#7FEDFC] text-white px-8 py-3 mt-5">Fresh Atta</button>
+                            <h3 class="text-white text-4xl text-left mt-5">UP to <span class="font-semibold">40% OFF</span></h3>
+                        </div>
+
+                        <div class="arrival-offers-card-img">
+                            <img src="c2-assets/teer-atta.png" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="arrival-offers-card-right rounded-[16px] flex gap-8 bg-[#2dbe9c] w-3/5 items-center justify-around p-8">
+                        <div class="arrival-offers-card-text">
+                            <img src="c2-assets/bakery-logo.png" alt="">
+                            <button class="rounded bg-[#7ed3c2] text-white px-8 py-3 mt-5">Crunchy Cookies</button>
+                            <h3 class="text-white text-4xl text-left mt-5">UP to <span class="font-semibold">20% OFF</span></h3>
+                        </div>
+
+                        <div class="arrival-offers-card-img">
+                            <img src="c2-assets/nutty-biscuit.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Arrival & Offers Section End -->
+
+        <!-- Newsletter Section Start -->
+        <section class="footer-section">
+            <div class="footer-container w-5/6 mx-auto bg-[#EFEBE3] relative rounded-3xl top-[225px]">
+                <div class="newsletter p-14 flex justify-evenly gap-10">
+                    <div class="newsletter-left">
+                        <img src="c2-assets/vegetable-busket.png" alt="">
+                    </div>
+
+                    <div class="newsletter-right content-evenly">
+                        <h3 class="text-4xl mt-6 mb-3 font-semibold">Get Grocery News!</h3>
+                        <p class="text-xl font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, error?</p>
+                        <input id="email-address" name="email-address" placeholder="Enter Your Email" type="email" class="block my-5 p-5 w-8/12 rounded-lg">
+                        <button class="bg-[#179800] px-5 py-2 rounded-lg text-white">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Newsletter Section Start -->
+
     </main>
 
     <footer>
-
+        <section class="footer-section lg:py-36 sm:py-12 bg-[#179800] text-white">
+            <div class="footer-container w-5/6 mx-auto mt-[225px] ">
+                <div class="footer-content flex items-end gap-16 justify-between">
+                    <div class="footer-content-0 w-1/4">
+                        <img src="c2-assets/logo-footer.png" alt="" class="cursor-pointer mb-3">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum cumque, accusantium ducimus odio incidunt voluptates?</p>
+                    </div>
+    
+                    <div class="footer-content-2 w-1/4">
+                        <ul class="flex flex-col gap-8">
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer-content-3 w-1/4">
+                        <p class="mb-3">Follow Us</p>
+                        <div class="social-links flex gap-6">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+        </section>
     </footer>
 </body>
 
