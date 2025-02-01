@@ -47,11 +47,11 @@
 </head>
 
 <body class="sora text-[#111111] text-xl">
-    <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]  overflow-hidden">
-        <nav class="min-[320px]:block max-[1050px]:block min-[1051px]:hidden">
+    <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3] overflow-hidden">
+        <nav class="min-[320px]:block max-[1050px]:block min-[1051px]:hidden border-b border-[#179800]">
             <div class="mobile-nav w-5/6 mx-auto flex py-3 text-center justify-between items-center">
                 <img src="c2-assets/mobile-logo.png" alt="">
-                <a href=""><i class="fa-solid fa-bars"></i></a>
+                <a href=""><i class="fa-solid fa-bars text-[#179800]"></i></a>
             </div>
         </nav>
 
@@ -100,7 +100,7 @@
 
     <main>
         <!-- Services Section Start -->
-        <section class="services-section lg:py-36 sm:py-12">
+        <section class="services-section min-[320px]:py-12 max-[1050px]:py-12 min-[1051px]:py-36">
             <div class="services-container w-5/6 mx-auto">
                 <h2 class="text-4xl font-semibold text-[#179800]">Services</h2>
                 <div class="services-content flex min-[320px]:flex-col max-[1050px]:flex-col min-[1051px]:flex-row gap-6 text-center mx-auto mt-12 p-0">
@@ -133,7 +133,7 @@
         <!-- Services Section End -->
 
         <!-- Popular Products Section Start -->
-        <section class="popular-products-section lg:py-36 sm:py-12 bg-[#EFEBE3]">
+        <section class="popular-products-section min-[320px]:py-12 max-[1050px]:py-12 min-[1051px]:py-36 bg-[#EFEBE3]">
             <div class="popular-products-container w-5/6 mx-auto">
                 <h2 class="text-4xl font-semibold text-[#179800]">Popular Products</h2>
                 <div class="popular-products-content mx-auto mt-12 p-0 grid min-[320px]:grid-cols-2 max-[1050px]:grid-cols-2 min-[1051px]:grid-cols-5 gap-5">
@@ -141,20 +141,20 @@
                         class="popular-products-card-big rounded-[16px] min-[320px]:col-span-2 max-[1050px]:col-span-2 min-[1051px]:col-span-2 row-span-4 bg-gradient-to-br from-[#53DB3A]">
                         <div
                             class="popular-products-card-big-inner size-full p-8 bg-[url('c2-assets/vegetable-offer.png')] bg-no-repeat bg-right-bottom">
-                            <h3 class="font-semibold text-white text-4xl text-left mt-14">30% Off</h3>
+                            <h3 class="font-semibold text-white text-4xl text-left">30% Off</h3>
                             <p class="mt-4">Enjoy incredible savings with our limited-time offer of 30% off</p>
                             <button class="rounded bg-white text-black px-8 py-3 mt-4">Buy Now</button>
                         </div>
                     </div>
 
-                    <div class="popular-products-card-small px-5 py-6 rounded-[10px] flex col-span-1.5 text-left gap-2 bg-white">
+                    <div class="popular-products-card-small px-5 py-6 rounded-[10px] flex text-left gap-2 bg-white">
                         <div
-                            class="popular-products-card-small-img size-20 content-center mx-auto bg-[#EFEBE3] rounded-[10px]">
-                            <img src="c2-assets/delivery.png" alt="" class="w-5/6 mx-auto">
+                            class="popular-products-card-small-img size-20 bg-[#EFEBE3] rounded-[10px] content-center">
+                            <img src="c2-assets/onion.png" alt="" class="w-5/6 mx-auto">
                         </div>
 
                         <div class="popular-products-card-small-content">
-                            <p class="text-base">4.5</p>
+                            <p class="text-base"><i class="fa-solid fa-star text-[#FFC107]"></i> 4.5</p>
                             <h3 class="text-xl">Onion 1kg</h3>
                             <p class="text-base">$39.99</p>
                         </div>
@@ -162,12 +162,38 @@
 
                     <div class="popular-products-card-small px-5 py-6 rounded-[10px] flex text-left gap-2 bg-white">
                         <div
-                            class="popular-products-card-small-img size-20 content-center mx-auto bg-[#EFEBE3] rounded-[10px]">
-                            <img src="c2-assets/delivery.png" alt="" class="w-5/6 mx-auto">
+                            class="popular-products-card-small-img size-20 bg-[#EFEBE3] rounded-[10px] content-center">
+                            <img src="c2-assets/tomato.png" alt="" class="w-5/6 mx-auto">
                         </div>
 
                         <div class="popular-products-card-small-content">
-                            <p class="text-base">4.5</p>
+                            <p class="text-base"><i class="fa-solid fa-star text-[#FFC107]"></i> 4.5</p>
+                            <h3 class="text-xl">Tomato 500g</h3>
+                            <p class="text-base">$39.99</p>
+                        </div>
+                    </div>
+
+                    <div class="popular-products-card-small px-5 py-6 rounded-[10px] flex text-left gap-2 bg-white">
+                        <div
+                            class="popular-products-card-small-img size-20 bg-[#EFEBE3] rounded-[10px] content-center">
+                            <img src="c2-assets/potato.png" alt="" class="w-5/6 mx-auto">
+                        </div>
+
+                        <div class="popular-products-card-small-content">
+                            <p class="text-base"><i class="fa-solid fa-star text-[#FFC107]"></i> 4.5</p>
+                            <h3 class="text-xl">Potato 1.5kg</h3>
+                            <p class="text-base">$39.99</p>
+                        </div>
+                    </div>
+
+                    <div class="popular-products-card-small px-5 py-6 rounded-[10px] flex text-left gap-2 bg-white">
+                        <div
+                            class="popular-products-card-small-img size-20 bg-[#EFEBE3] rounded-[10px] content-center">
+                            <img src="c2-assets/onion.png" alt="" class="w-5/6 mx-auto">
+                        </div>
+
+                        <div class="popular-products-card-small-content">
+                            <p class="text-base"><i class="fa-solid fa-star text-[#FFC107]"></i> 4.5</p>
                             <h3 class="text-xl">Onion 1kg</h3>
                             <p class="text-base">$39.99</p>
                         </div>
@@ -175,91 +201,65 @@
 
                     <div class="popular-products-card-small px-5 py-6 rounded-[10px] flex text-left gap-2 bg-white">
                         <div
-                            class="popular-products-card-small-img size-20 content-center mx-auto bg-[#EFEBE3] rounded-[10px]">
-                            <img src="c2-assets/delivery.png" alt="" class="w-5/6 mx-auto">
+                            class="popular-products-card-small-img size-20 bg-[#EFEBE3] rounded-[10px] content-center">
+                            <img src="c2-assets/potato.png" alt="" class="w-5/6 mx-auto">
                         </div>
 
                         <div class="popular-products-card-small-content">
-                            <p class="text-base">4.5</p>
-                            <h3 class="text-xl">Onion 1kg</h3>
+                            <p class="text-base"><i class="fa-solid fa-star text-[#FFC107]"></i> 4.5</p>
+                            <h3 class="text-xl">Potato 1kg</h3>
                             <p class="text-base">$39.99</p>
                         </div>
                     </div>
 
                     <div class="popular-products-card-small px-5 py-6 rounded-[10px] flex text-left gap-2 bg-white">
                         <div
-                            class="popular-products-card-small-img size-20 content-center mx-auto bg-[#EFEBE3] rounded-[10px]">
-                            <img src="c2-assets/delivery.png" alt="" class="w-5/6 mx-auto">
+                            class="popular-products-card-small-img size-20 bg-[#EFEBE3] rounded-[10px] content-center">
+                            <img src="c2-assets/tomato.png" alt="" class="w-5/6 mx-auto">
                         </div>
 
                         <div class="popular-products-card-small-content">
-                            <p class="text-base">4.5</p>
-                            <h3 class="text-xl">Onion 1kg</h3>
+                            <p class="text-base"><i class="fa-solid fa-star text-[#FFC107]"></i> 4.5</p>
+                            <h3 class="text-xl">Tomato 1kg</h3>
                             <p class="text-base">$39.99</p>
                         </div>
                     </div>
 
                     <div class="popular-products-card-small px-5 py-6 rounded-[10px] flex text-left gap-2 bg-white">
                         <div
-                            class="popular-products-card-small-img size-20 content-center mx-auto bg-[#EFEBE3] rounded-[10px]">
-                            <img src="c2-assets/delivery.png" alt="" class="w-5/6 mx-auto">
+                            class="popular-products-card-small-img size-20 bg-[#EFEBE3] rounded-[10px] content-center">
+                            <img src="c2-assets/onion.png" alt="" class="w-5/6 mx-auto">
                         </div>
 
                         <div class="popular-products-card-small-content">
-                            <p class="text-base">4.5</p>
-                            <h3 class="text-xl">Onion 1kg</h3>
+                            <p class="text-base"><i class="fa-solid fa-star text-[#FFC107]"></i> 4.5</p>
+                            <h3 class="text-xl">Onion 10kg</h3>
                             <p class="text-base">$39.99</p>
                         </div>
                     </div>
 
                     <div class="popular-products-card-small px-5 py-6 rounded-[10px] flex text-left gap-2 bg-white">
                         <div
-                            class="popular-products-card-small-img size-20 content-center mx-auto bg-[#EFEBE3] rounded-[10px]">
-                            <img src="c2-assets/delivery.png" alt="" class="w-5/6 mx-auto">
+                            class="popular-products-card-small-img size-20 bg-[#EFEBE3] rounded-[10px] content-center">
+                            <img src="c2-assets/potato.png" alt="" class="w-5/6 mx-auto">
                         </div>
 
                         <div class="popular-products-card-small-content">
-                            <p class="text-base">4.5</p>
-                            <h3 class="text-xl">Onion 1kg</h3>
-                            <p class="text-base">$39.99</p>
-                        </div>
-                    </div>
-
-                    <div class="popular-products-card-small px-5 py-6 rounded-[10px] flex text-left gap-2 bg-white">
-                        <div
-                            class="popular-products-card-small-img size-20 content-center mx-auto bg-[#EFEBE3] rounded-[10px]">
-                            <img src="c2-assets/delivery.png" alt="" class="w-5/6 mx-auto">
-                        </div>
-
-                        <div class="popular-products-card-small-content">
-                            <p class="text-base">4.5</p>
-                            <h3 class="text-xl">Onion 1kg</h3>
-                            <p class="text-base">$39.99</p>
-                        </div>
-                    </div>
-
-                    <div class="popular-products-card-small px-5 py-6 rounded-[10px] flex text-left gap-2 bg-white">
-                        <div
-                            class="popular-products-card-small-img size-20 content-center mx-auto bg-[#EFEBE3] rounded-[10px]">
-                            <img src="c2-assets/delivery.png" alt="" class="w-5/6 mx-auto">
-                        </div>
-
-                        <div class="popular-products-card-small-content">
-                            <p class="text-base">4.5</p>
-                            <h3 class="text-xl">Onion 1kg</h3>
+                            <p class="text-base"><i class="fa-solid fa-star text-[#FFC107]"></i> 4.5</p>
+                            <h3 class="text-xl">Potato 800g</h3>
                             <p class="text-base">$39.99</p>
                         </div>
                     </div>
 
                     <div class="popular-products-card-small px-5 py-6 rounded-[10px] flex min-[320px]:hidden max-[1050px]:hidden min-[1051px]:flex text-left gap-2 bg-white">
                         <div
-                            class="popular-products-card-small-img size-20 content-center mx-auto bg-[#EFEBE3] rounded-[10px]">
-                            <img src="c2-assets/delivery.png" alt="" class="w-5/6 mx-auto">
+                            class="popular-products-card-small-img size-20 bg-[#EFEBE3] rounded-[10px] content-center">
+                            <img src="c2-assets/tomato.png" alt="" class="w-5/6 mx-auto">
                         </div>
 
                         <div class="popular-products-card-small-content">
-                            <p class="text-base">4.5</p>
-                            <h3 class="text-xl">Onion 1kg</h3>
+                            <p class="text-base"><i class="fa-solid fa-star text-[#FFC107]"></i> 4.5</p>
+                            <h3 class="text-xl">Tomato 1kg</h3>
                             <p class="text-base">$39.99</p>
                         </div>
                     </div>
@@ -269,7 +269,7 @@
         <!-- Popular Products Section End -->
 
         <!-- Arrival & Offers Section Start -->
-        <section class="arrival-offers-section lg:py-36 sm:py-12">
+        <section class="arrival-offers-section min-[320px]:py-12 max-[1050px]:py-12 min-[1051px]:py-36">
             <div class="arrival-offers-container w-5/6 mx-auto">
                 <h2 class="text-4xl font-semibold text-[#179800]">Arrival & Offers</h2>
                 <div class="arrival-offers-content mx-auto mt-12 p-0  flex min-[320px]:flex-col max-[1050px]:flex-col min-[1051px]:flex-row gap-5">
@@ -302,7 +302,7 @@
         <!-- Arrival & Offers Section End -->
 
         <!-- Meal Kits and Recipes Section Start -->
-        <section class="recipes-section lg:py-36 sm:py-12 bg-[#EFEBE3]">
+        <section class="recipes-section min-[320px]:py-12 max-[1050px]:py-12 min-[1051px]:py-36 bg-[#EFEBE3]">
             <div class="recipes-container w-5/6 mx-auto">
                 <h2 class="text-4xl font-semibold text-[#179800]">Meal Kits and Recipes</h2>
                 <div class="recipes-content flex min-[320px]:flex-col max-[1050px]:flex-col min-[1051px]:flex-row gap-6 text-center mx-auto mt-12 p-0">
@@ -335,7 +335,7 @@
         <!-- Meal Kits and Recipes Section End -->
 
         <!-- New Products Section Start -->
-        <section class="new-products-section lg:pt-36 sm:pt-12">
+        <section class="new-products-section min-[320px]:pt-12 max-[1050px]:pt-12 min-[1051px]:pt-36">
             <div class="new-products-container w-5/6 mx-auto">
                 <h2 class="text-4xl font-semibold text-[#179800]">New Products</h2>
                 <div class="new-products-content mx-auto mt-5 p-0 gap-5 flex min-[320px]:flex-col max-[1050px]:flex-col min-[1051px]:flex-row">
@@ -389,7 +389,7 @@
     </main>
 
     <footer>
-        <section class="footer-section lg:py-36 sm:py-12 bg-[#179800] text-white ">
+        <section class="footer-section min-[320px]:py-12 max-[1050px]:py-12 min-[1051px]:py-36 bg-[#179800] text-white ">
             <div class="footer-container w-5/6 mx-auto min-[320px]:mt-[365px] max-[1050px]:mt-[365px] min-[1051px]:mt-[225px]">
                 <div class="footer-content flex min-[320px]:flex-col max-[1050px]:flex-col min-[1051px]:flex-row min-[320px]:items-start max-[1050px]:items-start min-[1051px]:items-end gap-16 justify-between">
                     <div class="footer-content-0 min-[320px]:w-full max-[1050px]:w-full min-[1051px]:w-1/4">
