@@ -40,7 +40,7 @@
         }
 
         @keyframes appear {
-            0%   {top:2500px;}
+            0%   {top:1000px;}
             100%  {top:0px;}
         }
     </style>
@@ -83,8 +83,8 @@
         <section class="hero-section mt-20">
             <div class="hero-container">
                 <div class="hero-content flex flex-col text-center mx-auto p-0">
-                    <div class="hero-text xl:w-3/4">
-                        <h1 class="xl:text-6xl sm:text-3xl font-semibold">Freshness <span class="text-[#179800]">You
+                    <div class="hero-text w-3/4">
+                        <h1 class="min-[320px]:text-3xl max-[1050px]:text-3xl min-[1051px]:text-6xl font-semibold">Freshness <span class="text-[#179800]">You
                                 Can<br>Count</span> On, Prices You’ll Love!</h1>
                         <p class="py-8">Shop your daily essentials at unbeatable prices. From fresh produce to pantry
                             staples, we’ve got you covered every day!</p>
@@ -103,7 +103,7 @@
         <section class="services-section lg:py-36 sm:py-12">
             <div class="services-container w-5/6 mx-auto">
                 <h2 class="text-4xl font-semibold text-[#179800]">Services</h2>
-                <div class="services-content flex gap-6 text-center mx-auto mt-12 p-0">
+                <div class="services-content flex min-[320px]:flex-col max-[1050px]:flex-col min-[1051px]:flex-row gap-6 text-center mx-auto mt-12 p-0">
                     <div class="services-card p-8 bg-[#EFEBE3] rounded-[16px]">
                         <div class="services-card-img size-36 content-center mx-auto bg-[#ffffff] rounded-[50%]">
                             <img src="c2-assets/service.png" alt="" class="mx-auto">
@@ -136,9 +136,9 @@
         <section class="popular-products-section lg:py-36 sm:py-12 bg-[#EFEBE3]">
             <div class="popular-products-container w-5/6 mx-auto">
                 <h2 class="text-4xl font-semibold text-[#179800]">Popular Products</h2>
-                <div class="popular-products-content mx-auto mt-12 p-0 grid grid-cols-5 grid-rows-3 gap-5">
+                <div class="popular-products-content mx-auto mt-12 p-0 grid min-[320px]:grid-cols-2 max-[1050px]:grid-cols-2 min-[1051px]:grid-cols-5 gap-5">
                     <div
-                        class="popular-products-card-big rounded-[16px] col-span-2 row-span-4 bg-gradient-to-br from-[#53DB3A]">
+                        class="popular-products-card-big rounded-[16px] min-[320px]:col-span-2 max-[1050px]:col-span-2 min-[1051px]:col-span-2 row-span-4 bg-gradient-to-br from-[#53DB3A]">
                         <div
                             class="popular-products-card-big-inner size-full p-8 bg-[url('c2-assets/vegetable-offer.png')] bg-no-repeat bg-right-bottom">
                             <h3 class="font-semibold text-white text-4xl text-left mt-14">30% Off</h3>
@@ -147,7 +147,7 @@
                         </div>
                     </div>
 
-                    <div class="popular-products-card-small px-5 py-6 rounded-[10px] flex text-left gap-2 bg-white">
+                    <div class="popular-products-card-small px-5 py-6 rounded-[10px] flex col-span-1.5 text-left gap-2 bg-white">
                         <div
                             class="popular-products-card-small-img size-20 content-center mx-auto bg-[#EFEBE3] rounded-[10px]">
                             <img src="c2-assets/delivery.png" alt="" class="w-5/6 mx-auto">
@@ -251,7 +251,7 @@
                         </div>
                     </div>
 
-                    <div class="popular-products-card-small px-5 py-6 rounded-[10px] flex text-left gap-2 bg-white">
+                    <div class="popular-products-card-small px-5 py-6 rounded-[10px] flex min-[320px]:hidden max-[1050px]:hidden min-[1051px]:flex text-left gap-2 bg-white">
                         <div
                             class="popular-products-card-small-img size-20 content-center mx-auto bg-[#EFEBE3] rounded-[10px]">
                             <img src="c2-assets/delivery.png" alt="" class="w-5/6 mx-auto">
@@ -272,8 +272,8 @@
         <section class="arrival-offers-section lg:py-36 sm:py-12">
             <div class="arrival-offers-container w-5/6 mx-auto">
                 <h2 class="text-4xl font-semibold text-[#179800]">Arrival & Offers</h2>
-                <div class="arrival-offers-content mx-auto mt-12 p-0 flex gap-5">
-                    <div class="arrival-offers-card-left rounded-[16px] flex gap-8 bg-[#115414] w-3/5 items-center justify-around p-8">
+                <div class="arrival-offers-content mx-auto mt-12 p-0  flex min-[320px]:flex-col max-[1050px]:flex-col min-[1051px]:flex-row gap-5">
+                    <div class="arrival-offers-card-left rounded-[16px] flex gap-8 bg-[#115414]  min-[320px]:w-full max-[1050px]:w-full min-[1051px]:w-3/5 items-center justify-around p-8">
                         <div class="arrival-offers-card-text">
                             <img src="c2-assets/dawat-logo.png" alt="">
                             <button class="rounded bg-[#63B76D] text-white px-8 py-3 mt-5">Cook Exotic Dishes</button>
@@ -285,7 +285,7 @@
                         </div>
                     </div>
 
-                    <div class="arrival-offers-card-right rounded-[10px] flex gap-8 bg-[#102861] w-2/5 items-center justify-around p-8">
+                    <div class="arrival-offers-card-right rounded-[10px] flex gap-8 bg-[#102861] min-[320px]:w-full max-[1050px]:w-full min-[1051px]:w-2/5 items-center justify-around p-8">
                         <div class="arrival-offers-card-text">
                             <img src="c2-assets/india-gate-logo.png" alt="">
                             <button class="rounded bg-[#2A4D97] text-white px-8 py-3 mt-5">World’s No.1 Rice</button>
@@ -305,7 +305,7 @@
         <section class="recipes-section lg:py-36 sm:py-12 bg-[#EFEBE3]">
             <div class="recipes-container w-5/6 mx-auto">
                 <h2 class="text-4xl font-semibold text-[#179800]">Meal Kits and Recipes</h2>
-                <div class="recipes-content flex gap-6 text-center mx-auto mt-12 p-0">
+                <div class="recipes-content flex min-[320px]:flex-col max-[1050px]:flex-col min-[1051px]:flex-row gap-6 text-center mx-auto mt-12 p-0">
                     <div class="recipes-card p-8 bg-[#FFFFFF] rounded-[16px] shadow-xl">
                         <div class="recipes-card-img size-36 content-center mx-auto bg-[#EFEBE3] rounded-[50%]">
                             <img src="c2-assets/meal.png" alt="" class="mx-auto w-3/5">
@@ -334,51 +334,51 @@
         </section>
         <!-- Meal Kits and Recipes Section End -->
 
-        <!-- Arrival & Offers Section Start -->
-        <section class="arrival-offers-section lg:pt-36 sm:pt-12">
-            <div class="arrival-offers-container w-5/6 mx-auto">
-                <h2 class="text-4xl font-semibold text-[#179800]">Arrival & Offers</h2>
-                <div class="arrival-offers-content mx-auto mt-5 p-0 flex gap-5">
-                    <div class="arrival-offers-card-left rounded-[10px] flex gap-8 bg-[#0398CA] w-2/5 items-center justify-around p-8">
-                        <div class="arrival-offers-card-text">
+        <!-- New Products Section Start -->
+        <section class="new-products-section lg:pt-36 sm:pt-12">
+            <div class="new-products-container w-5/6 mx-auto">
+                <h2 class="text-4xl font-semibold text-[#179800]">New Products</h2>
+                <div class="new-products-content mx-auto mt-5 p-0 gap-5 flex min-[320px]:flex-col max-[1050px]:flex-col min-[1051px]:flex-row">
+                    <div class="new-products-card-left rounded-[10px] flex gap-8 bg-[#0398CA] min-[320px]:w-full max-[1050px]:w-full min-[1051px]:w-2/5 items-center justify-around p-8">
+                        <div class="new-products-card-text">
                             <img src="c2-assets/teer-logo.png" alt="" class="max-w-[140px]">
                             <button class="rounded bg-[#7FEDFC] text-white px-8 py-3 mt-5">Fresh Atta</button>
                             <h3 class="text-white text-4xl text-left mt-5">UP to <span class="font-semibold">40% OFF</span></h3>
                         </div>
 
-                        <div class="arrival-offers-card-img">
+                        <div class="new-products-card-img">
                             <img src="c2-assets/teer-atta.png" alt="">
                         </div>
                     </div>
                     
-                    <div class="arrival-offers-card-right rounded-[16px] flex gap-8 bg-[#2dbe9c] w-3/5 items-center justify-around p-8">
-                        <div class="arrival-offers-card-text">
+                    <div class="new-products-card-right rounded-[16px] flex min-[320px]:w-full max-[1050px]:w-full min-[1051px]:w-3/5 gap-8 bg-[#2dbe9c] items-center justify-around p-8">
+                        <div class="new-products-card-text">
                             <img src="c2-assets/bakery-logo.png" alt="">
                             <button class="rounded bg-[#7ed3c2] text-white px-8 py-3 mt-5">Crunchy Cookies</button>
                             <h3 class="text-white text-4xl text-left mt-5">UP to <span class="font-semibold">20% OFF</span></h3>
                         </div>
 
-                        <div class="arrival-offers-card-img">
+                        <div class="new-products-card-img">
                             <img src="c2-assets/nutty-biscuit.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Arrival & Offers Section End -->
+        <!-- New Products Section End -->
 
         <!-- Newsletter Section Start -->
         <section class="footer-section">
-            <div class="footer-container w-5/6 mx-auto bg-[#EFEBE3] relative rounded-3xl top-[225px]">
-                <div class="newsletter p-14 flex justify-evenly gap-10">
+            <div class="footer-container w-5/6 mx-auto bg-[#EFEBE3] relative rounded-3xl min-[320px]:top-[365px] max-[1050px]:top-[365px] min-[1051px]:top-[225px]">
+                <div class="newsletter p-14 flex min-[320px]:flex-col max-[1050px]:flex-col min-[1051px]:flex-row justify-evenly items-center gap-10">
                     <div class="newsletter-left">
                         <img src="c2-assets/vegetable-busket.png" alt="">
                     </div>
 
-                    <div class="newsletter-right content-evenly">
+                    <div class="newsletter-right content-evenly min-[320px]:text-center max-[1050px]:text-center min-[1051px]:text-left">
                         <h3 class="text-4xl mt-6 mb-3 font-semibold">Get Grocery News!</h3>
                         <p class="text-xl font-normal">Exclusive training tips, ticks, product deals and more.</p>
-                        <input id="email-address" name="email-address" placeholder="Enter Your Email" type="email" class="block my-5 p-5 w-8/12 rounded-lg">
+                        <input id="email-address" name="email-address" placeholder="Enter Your Email" type="email" class="block my-5 p-5 min-[320px]:w-full max-[1050px]:w-full min-[1051px]:w-8/12 rounded-lg min-[320px]:mx-auto max-[1050px]:mx-auto min-[1051px]:mx-[0px]">
                         <button class="bg-[#179800] px-5 py-2 rounded-lg text-white">Subscribe</button>
                     </div>
                 </div>
@@ -389,15 +389,15 @@
     </main>
 
     <footer>
-        <section class="footer-section lg:py-36 sm:py-12 bg-[#179800] text-white">
-            <div class="footer-container w-5/6 mx-auto mt-[225px] ">
-                <div class="footer-content flex items-end gap-16 justify-between">
-                    <div class="footer-content-0 w-1/4">
+        <section class="footer-section lg:py-36 sm:py-12 bg-[#179800] text-white ">
+            <div class="footer-container w-5/6 mx-auto min-[320px]:mt-[365px] max-[1050px]:mt-[365px] min-[1051px]:mt-[225px]">
+                <div class="footer-content flex min-[320px]:flex-col max-[1050px]:flex-col min-[1051px]:flex-row min-[320px]:items-start max-[1050px]:items-start min-[1051px]:items-end gap-16 justify-between">
+                    <div class="footer-content-0 min-[320px]:w-full max-[1050px]:w-full min-[1051px]:w-1/4">
                         <img src="c2-assets/logo-footer.png" alt="" class="cursor-pointer mb-3">
-                        <p>Exclusive training tips, ticks, product deals and more.</p>
+                        <p>Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
                     </div>
     
-                    <div class="footer-content-2 w-1/4">
+                    <div class="footer-content-2 min-[320px]:w-full max-[1050px]:w-full min-[1051px]:w-1/4">
                         <ul class="flex flex-col gap-4">
                             <li><a href="#">Products</a></li>
                             <li><a href="#">Services</a></li>
@@ -405,7 +405,7 @@
                         </ul>
                     </div>
     
-                    <div class="footer-content-3 w-1/4">
+                    <div class="footer-content-3 min-[320px]:w-full max-[1050px]:w-full min-[1051px]:w-1/4">
                         <p class="mb-3">Follow Us</p>
                         <div class="social-links flex gap-6">
                             <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -421,5 +421,3 @@
 </body>
 
 </html>
-
-class="py-5 text-center"
